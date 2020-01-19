@@ -8,13 +8,20 @@
 
 import UIKit
 
-class productDetails: UITableViewCell {
+class productDetailsCell: UITableViewCell {
 
+    @IBOutlet weak var valueLb: UILabel!
+    @IBOutlet weak var keyLb: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    func configureCell(details: productsData){
+        keyLb.text = details.title
+        valueLb.text = details.description
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

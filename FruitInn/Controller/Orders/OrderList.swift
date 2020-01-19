@@ -51,5 +51,11 @@ extension OrderList: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OrderDetails") as! OrderDetails
+        vc.code = "\(orders[indexPath.item].order_id ?? 0)"
+        vc.comments = orders[indexPath.item].comments ?? ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

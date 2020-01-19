@@ -1,174 +1,174 @@
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "0X5-9Z-8pf"; */
-"0X5-9Z-8pf.normalTitle" = "Send";
+"0X5-9Z-8pf.normalTitle" = "ارسال";
 
 /* Class = "UILabel"; text = "Sign In"; ObjectID = "0oe-lC-A1F"; */
-"0oe-lC-A1F.text" = "Sign In";
+"0oe-lC-A1F.text" = "تسجيل الدخول";
 
 /* Class = "UILabel"; text = "State"; ObjectID = "1rN-1i-ape"; */
-"1rN-1i-ape.text" = "State";
+"1rN-1i-ape.text" = "الحاله";
 
 /* Class = "UILabel"; text = "Order Code"; ObjectID = "2EQ-vY-wjf"; */
-"2EQ-vY-wjf.text" = "Order Code";
+"2EQ-vY-wjf.text" = "رقم الطلب";
 
 /* Class = "UILabel"; text = "Apple"; ObjectID = "2PQ-JB-4oF"; */
 "2PQ-JB-4oF.text" = "Apple";
 
 /* Class = "UILabel"; text = "Message"; ObjectID = "2zP-Qq-o3Z"; */
-"2zP-Qq-o3Z.text" = "Message";
+"2zP-Qq-o3Z.text" = "رساله";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "37g-p0-eG2"; */
-"37g-p0-eG2.placeholder" = "Email";
+"37g-p0-eG2.placeholder" = "البريد الالكترونى";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "3Wh-2D-SXX"; */
 "3Wh-2D-SXX.text" = "Label";
 
 /* Class = "UISegmentedControl"; 4JC-cg-skb.segmentTitles[0] = "User Data"; ObjectID = "4JC-cg-skb"; */
-"4JC-cg-skb.segmentTitles[0]" = "User Data";
+"4JC-cg-skb.segmentTitles[0]" = "بيانات المستخدم";
 
 /* Class = "UISegmentedControl"; 4JC-cg-skb.segmentTitles[1] = "User Password"; ObjectID = "4JC-cg-skb"; */
-"4JC-cg-skb.segmentTitles[1]" = "User Password";
+"4JC-cg-skb.segmentTitles[1]" = "كلمة المرور";
 
 /* Class = "UILabel"; text = "Select Season"; ObjectID = "5K0-mF-QJT"; */
-"5K0-mF-QJT.text" = "Select Season";
+"5K0-mF-QJT.text" = "قم باختيار الموسم";
 
 /* Class = "UILabel"; text = "Top Products"; ObjectID = "7zq-xp-W1P"; */
-"7zq-xp-W1P.text" = "Top Products";
+"7zq-xp-W1P.text" = "افضل المنتجات";
 
 /* Class = "UITextField"; placeholder = "Old Password"; ObjectID = "8Ps-xp-Jg4"; */
-"8Ps-xp-Jg4.placeholder" = "Old Password";
+"8Ps-xp-Jg4.placeholder" = "كلمه المرور القديمه";
 
 /* Class = "UIButton"; normalTitle = "Who we are"; ObjectID = "8Xp-Po-9YF"; */
-"8Xp-Po-9YF.normalTitle" = "Who we are";
+"8Xp-Po-9YF.normalTitle" = "من نحن";
 
 /* Class = "UIButton"; normalTitle = "Vegetables"; ObjectID = "8Ya-5T-MKo"; */
-"8Ya-5T-MKo.normalTitle" = "Vegetables";
+"8Ya-5T-MKo.normalTitle" = "الخضراوات";
 
 /* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "8jI-PO-apZ"; */
-"8jI-PO-apZ.normalTitle" = "Forgot Password?";
+"8jI-PO-apZ.normalTitle" = "هل نسيت كلمه المرور؟";
 
 /* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "8nq-gk-tvl"; */
-"8nq-gk-tvl.placeholder" = "Full Name";
+"8nq-gk-tvl.placeholder" = "الاسم بالكامل";
 
 /* Class = "UILabel"; text = "Select Counter"; ObjectID = "CsQ-vy-oSW"; */
-"CsQ-vy-oSW.text" = "Select Counter";
+"CsQ-vy-oSW.text" = "قم باختيار الدولة";
 
 /* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "Doc-MK-yG3"; */
-"Doc-MK-yG3.placeholder" = "Quantity";
+"Doc-MK-yG3.placeholder" = "الكمية";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Dpx-T8-R6h"; */
 "Dpx-T8-R6h.text" = "0";
 
 /* Class = "UILabel"; text = "Summer"; ObjectID = "ENe-yh-mpr"; */
-"ENe-yh-mpr.text" = "Summer";
+"ENe-yh-mpr.text" = "الصيف";
 
 /* Class = "UILabel"; text = "10 Jun 2020"; ObjectID = "FDo-Ul-XIg"; */
 "FDo-Ul-XIg.text" = "10 Jun 2020";
 
 /* Class = "UILabel"; text = "Who We Are"; ObjectID = "Fww-1I-YLv"; */
-"Fww-1I-YLv.text" = "Who We Are";
+"Fww-1I-YLv.text" = "من نحن";
 
 /* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "GzX-ht-DKH"; */
-"GzX-ht-DKH.normalTitle" = "Contact Us";
+"GzX-ht-DKH.normalTitle" = "تواصل معنا";
 
 /* Class = "UILabel"; text = "Fruit"; ObjectID = "I0N-tp-bHu"; */
-"I0N-tp-bHu.text" = "Fruit";
+"I0N-tp-bHu.text" = "فاكهة";
 
 /* Class = "UILabel"; text = "Details"; ObjectID = "Jv3-I0-0R3"; */
-"Jv3-I0-0R3.text" = "Details";
+"Jv3-I0-0R3.text" = "التفاصيل";
 
 /* Class = "UILabel"; text = "Payment Secure"; ObjectID = "KKC-iQ-m4G"; */
 "KKC-iQ-m4G.text" = "Payment Secure";
 
 /* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "LPe-xO-b9i"; */
-"LPe-xO-b9i.normalTitle" = "HOME";
+"LPe-xO-b9i.normalTitle" = "الرئيسية";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "LY4-34-66Z"; */
 "LY4-34-66Z.text" = "Label";
 
 /* Class = "UIButton"; normalTitle = "ORDER NOW"; ObjectID = "Lym-Vy-Icx"; */
-"Lym-Vy-Icx.normalTitle" = "ORDER NOW";
+"Lym-Vy-Icx.normalTitle" = "اطلب الان";
 
 /* Class = "UIButton"; normalTitle = "LOG OUT"; ObjectID = "MPg-OX-Fur"; */
-"MPg-OX-Fur.normalTitle" = "LOG OUT";
+"MPg-OX-Fur.normalTitle" = "تسجيل الخروج";
 
 /* Class = "UILabel"; text = "More Details.."; ObjectID = "N0b-is-UhK"; */
-"N0b-is-UhK.text" = "More Details..";
+"N0b-is-UhK.text" = "التفاصيل..";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "NJ8-vX-VBI"; */
 "NJ8-vX-VBI.text" = "Label";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "NJm-ca-c4T"; */
-"NJm-ca-c4T.text" = "Name";
+"NJm-ca-c4T.text" = "الاسم";
 
 /* Class = "UILabel"; text = "3"; ObjectID = "NaR-Ah-1ZG"; */
 "NaR-Ah-1ZG.text" = "3";
 
 /* Class = "UILabel"; text = "Date"; ObjectID = "Nwf-do-hlf"; */
-"Nwf-do-hlf.text" = "Date";
+"Nwf-do-hlf.text" = "التاريخ";
 
 /* Class = "UILabel"; text = "Filter"; ObjectID = "OAm-hy-jfh"; */
-"OAm-hy-jfh.text" = "Filter";
+"OAm-hy-jfh.text" = "فلتر";
 
 /* Class = "UILabel"; text = "Who We Are"; ObjectID = "OI7-qS-Nba"; */
-"OI7-qS-Nba.text" = "Who We Are";
+"OI7-qS-Nba.text" = "من نحن";
 
 /* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "OYv-ww-Brj"; */
-"OYv-ww-Brj.normalTitle" = "SIGN IN";
+"OYv-ww-Brj.normalTitle" = "تسجيل الدخول";
 
 /* Class = "UILabel"; text = "Select Type"; ObjectID = "Ofr-dl-9tY"; */
-"Ofr-dl-9tY.text" = "Select Type";
+"Ofr-dl-9tY.text" = "قم باختيار النوع";
 
 /* Class = "UIButton"; normalTitle = "Who we are"; ObjectID = "PEB-n8-r7V"; */
-"PEB-n8-r7V.normalTitle" = "Who we are";
+"PEB-n8-r7V.normalTitle" = "من نحن";
 
 /* Class = "UILabel"; text = "MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel."; ObjectID = "Q71-kV-PQo"; */
-"Q71-kV-PQo.text" = "MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel.";
+"Q71-kV-PQo.text" = "";
 
 /* Class = "UITextField"; placeholder = "Country"; ObjectID = "QSS-hS-Yjk"; */
-"QSS-hS-Yjk.placeholder" = "Country";
+"QSS-hS-Yjk.placeholder" = "الدولة";
 
 /* Class = "UIButton"; normalTitle = "LOG OUT"; ObjectID = "S5e-cc-wvL"; */
-"S5e-cc-wvL.normalTitle" = "LOG OUT";
+"S5e-cc-wvL.normalTitle" = "تسجيل الخروج";
 
 /* Class = "UIButton"; normalTitle = "(Login/Register)"; ObjectID = "The-EY-gZu"; */
-"The-EY-gZu.normalTitle" = "(Login/Register)";
+"The-EY-gZu.normalTitle" = "(تسجيل الدخول / تسجيل)";
 
 /* Class = "UILabel"; text = "Varieties"; ObjectID = "VO7-WC-Wpz"; */
-"VO7-WC-Wpz.text" = "Varieties";
+"VO7-WC-Wpz.text" = "أصناف";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Vrx-w7-sKj"; */
 "Vrx-w7-sKj.text" = "Label";
 
 /* Class = "UILabel"; text = "Varieties"; ObjectID = "WXi-lE-jlZ"; */
-"WXi-lE-jlZ.text" = "Varieties";
+"WXi-lE-jlZ.text" = "أصناف";
 
 /* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "XK0-hU-KHW"; */
-"XK0-hU-KHW.placeholder" = "Confirm Password";
+"XK0-hU-KHW.placeholder" = "تأكيد كلمة المرور";
 
 /* Class = "UITextField"; placeholder = "Phone"; ObjectID = "XOV-cN-X5A"; */
-"XOV-cN-X5A.placeholder" = "Phone";
+"XOV-cN-X5A.placeholder" = "رقم التليفون";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "Xen-YO-flm"; */
-"Xen-YO-flm.placeholder" = "Password";
+"Xen-YO-flm.placeholder" = "كلمة المرور";
 
 /* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "XnJ-bT-eA3"; */
-"XnJ-bT-eA3.placeholder" = "Full Name";
+"XnJ-bT-eA3.placeholder" = "الاسم بالكامل";
 
 /* Class = "UILabel"; text = "Quantity"; ObjectID = "XoM-Nf-KNP"; */
-"XoM-Nf-KNP.text" = "Quantity";
+"XoM-Nf-KNP.text" = "الكمية";
 
 /* Class = "UILabel"; text = "100% Money Back"; ObjectID = "Xoi-lf-1Xy"; */
 "Xoi-lf-1Xy.text" = "100% Money Back";
 
 /* Class = "UIButton"; normalTitle = "Fruits"; ObjectID = "Yf1-Ej-APm"; */
-"Yf1-Ej-APm.normalTitle" = "Fruits";
+"Yf1-Ej-APm.normalTitle" = "فاكهة";
 
 /* Class = "UILabel"; text = "Order: 0"; ObjectID = "Z9R-m8-40O"; */
 "Z9R-m8-40O.text" = "Order: 0";
 
 /* Class = "UILabel"; text = "Fruit"; ObjectID = "ZJs-Sh-mA0"; */
-"ZJs-Sh-mA0.text" = "Fruit";
+"ZJs-Sh-mA0.text" = "فاكهة";
 
 /* Class = "UIButton"; normalTitle = "Tariq"; ObjectID = "aXw-WB-Bx4"; */
 "aXw-WB-Bx4.normalTitle" = "Tariq";
@@ -180,7 +180,7 @@
 "b5t-5l-A9Z.normalTitle" = "Tariq";
 
 /* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "cMZ-hh-jgt"; */
-"cMZ-hh-jgt.normalTitle" = "Gallery";
+"cMZ-hh-jgt.normalTitle" = "المعرض";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "dON-3j-MWu"; */
 "dON-3j-MWu.text" = "0";
@@ -189,103 +189,109 @@
 "dQT-sY-lPf.text" = "News: ";
 
 /* Class = "UIButton"; normalTitle = "(Login/Register)"; ObjectID = "eTM-tv-zFC"; */
-"eTM-tv-zFC.normalTitle" = "(Login/Register)";
+"eTM-tv-zFC.normalTitle" = "(تسجيل الدخول / تسجيل)";
 
 /* Class = "UILabel"; text = "Related Products"; ObjectID = "fuM-6U-ybB"; */
-"fuM-6U-ybB.text" = "Related Products";
+"fuM-6U-ybB.text" = "منتجات لها علاقة";
 
 /* Class = "UIButton"; normalTitle = "Vegetables"; ObjectID = "gNg-wm-Oum"; */
-"gNg-wm-Oum.normalTitle" = "Vegetables";
+"gNg-wm-Oum.normalTitle" = "الخضراوات";
 
 /* Class = "UIButton"; normalTitle = "My Orders"; ObjectID = "h8z-Aa-Z0c"; */
-"h8z-Aa-Z0c.normalTitle" = "My Orders";
+"h8z-Aa-Z0c.normalTitle" = "طلباتى";
 
 /* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "hW1-8x-PMF"; */
-"hW1-8x-PMF.normalTitle" = "Edit";
+"hW1-8x-PMF.normalTitle" = "تعديل";
 
 /* Class = "UILabel"; text = "Product Name"; ObjectID = "hh6-5g-R1Q"; */
-"hh6-5g-R1Q.text" = "Product Name";
+"hh6-5g-R1Q.text" = "اسم المنتج";
 
 /* Class = "UILabel"; text = "Write Comment"; ObjectID = "j6A-04-ScO"; */
-"j6A-04-ScO.text" = "Write Comment";
+"j6A-04-ScO.text" = "قم بكتابه تعليق";
 
 /* Class = "UILabel"; text = "Articles"; ObjectID = "jNK-oC-7bL"; */
-"jNK-oC-7bL.text" = "Articles";
+"jNK-oC-7bL.text" = "مقالات";
 
 /* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "kSd-RK-Xtc"; */
-"kSd-RK-Xtc.placeholder" = "Phone Number";
+"kSd-RK-Xtc.placeholder" = "رقم التليفون";
 
 /* Class = "UILabel"; text = "PREVIOUS ORDERS"; ObjectID = "lCZ-FW-5iu"; */
-"lCZ-FW-5iu.text" = "PREVIOUS ORDERS";
+"lCZ-FW-5iu.text" = "المنتجات السابقة";
 
 /* Class = "UILabel"; text = "tariq"; ObjectID = "mtI-EF-wLr"; */
 "mtI-EF-wLr.text" = "tariq";
 
 /* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "obs-rP-Rzh"; */
-"obs-rP-Rzh.normalTitle" = "Contact Us";
+"obs-rP-Rzh.normalTitle" = "تواصل معنا";
 
 /* Class = "UILabel"; text = "Update Profile"; ObjectID = "pCR-eM-lh5"; */
-"pCR-eM-lh5.text" = "Update Profile";
+"pCR-eM-lh5.text" = "تعديل البيانات الشخصية";
 
 /* Class = "UILabel"; text = "Contact Us"; ObjectID = "pPd-qI-dpH"; */
-"pPd-qI-dpH.text" = "Contact Us";
+"pPd-qI-dpH.text" = "تواصل معنا";
 
 /* Class = "UILabel"; text = "News"; ObjectID = "pvQ-lV-8Kn"; */
-"pvQ-lV-8Kn.text" = "News";
+"pvQ-lV-8Kn.text" = "اخبار";
 
 /* Class = "UITextField"; placeholder = "Type"; ObjectID = "rhb-eY-Ruj"; */
-"rhb-eY-Ruj.placeholder" = "Type";
+"rhb-eY-Ruj.placeholder" = "النوع";
 
 /* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "rv0-8l-Mif"; */
-"rv0-8l-Mif.normalTitle" = "Gallery";
+"rv0-8l-Mif.normalTitle" = "المعرض";
 
 /* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "saj-BD-Ylv"; */
-"saj-BD-Ylv.placeholder" = "Full Name";
+"saj-BD-Ylv.placeholder" = "الاسم بالكامل";
 
 /* Class = "UIButton"; normalTitle = "Filter"; ObjectID = "spf-Hb-rkm"; */
-"spf-Hb-rkm.normalTitle" = "Filter";
+"spf-Hb-rkm.normalTitle" = "فلتر";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "stc-Ma-5Il"; */
-"stc-Ma-5Il.placeholder" = "Email";
+"stc-Ma-5Il.placeholder" = "البريد الالكترونى";
 
 /* Class = "UIButton"; normalTitle = "See All"; ObjectID = "tJ8-11-Blb"; */
-"tJ8-11-Blb.normalTitle" = "See All";
+"tJ8-11-Blb.normalTitle" = "اظهر الكل";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "u12-Je-Ip0"; */
 "u12-Je-Ip0.text" = "Label";
 
 /* Class = "UILabel"; text = "Select Type"; ObjectID = "u96-Y1-MMw"; */
-"u96-Y1-MMw.text" = "Select Type";
+"u96-Y1-MMw.text" = "قم باختيار النوع";
 
 /* Class = "UIButton"; normalTitle = "My Orders"; ObjectID = "uHI-vU-rX0"; */
-"uHI-vU-rX0.normalTitle" = "My Orders";
+"uHI-vU-rX0.normalTitle" = "طلباتى";
 
 /* Class = "UILabel"; text = "Fruit"; ObjectID = "vB0-in-lYZ"; */
-"vB0-in-lYZ.text" = "Fruit";
+"vB0-in-lYZ.text" = "الفاكهة";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "vBA-6e-bDX"; */
-"vBA-6e-bDX.placeholder" = "Email";
+"vBA-6e-bDX.placeholder" = "البريد الالكترونى";
 
 /* Class = "UIButton"; normalTitle = "CREATE ACCOUNT"; ObjectID = "w3O-P0-aoo"; */
-"w3O-P0-aoo.normalTitle" = "CREATE ACCOUNT";
+"w3O-P0-aoo.normalTitle" = "انشاء حساب";
 
 /* Class = "UITextField"; placeholder = "New Password"; ObjectID = "wHs-jK-ZTb"; */
-"wHs-jK-ZTb.placeholder" = "New Password";
+"wHs-jK-ZTb.placeholder" = "كلمة مرور جديدة";
 
 /* Class = "UILabel"; text = "Apples and face Rock Aged white chandder Cheese"; ObjectID = "wcG-Rf-k4e"; */
 "wcG-Rf-k4e.text" = "Apples and face Rock Aged white chandder Cheese";
 
 /* Class = "UILabel"; text = "All Products"; ObjectID = "wub-Ab-kfb"; */
-"wub-Ab-kfb.text" = "All Products";
+"wub-Ab-kfb.text" = "كل المنتجات";
 
 /* Class = "UIButton"; normalTitle = "Fruits"; ObjectID = "x0I-OA-Wbd"; */
-"x0I-OA-Wbd.normalTitle" = "Fruits";
+"x0I-OA-Wbd.normalTitle" = "الفاكهة";
 
 /* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "xSL-OC-KNO"; */
-"xSL-OC-KNO.normalTitle" = "HOME";
+"xSL-OC-KNO.normalTitle" = "الرئيسية";
 
 /* Class = "UILabel"; text = "Fruit"; ObjectID = "xVi-uP-VqR"; */
-"xVi-uP-VqR.text" = "Fruit";
+"xVi-uP-VqR.text" = "الفاكهة";
 
 /* Class = "UILabel"; text = "Comments"; ObjectID = "zaY-0D-IHJ"; */
-"zaY-0D-IHJ.text" = "Comments";
+"zaY-0D-IHJ.text" = "تعليقات";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "FsC-ps-Ghg"; */
+"FsC-ps-Ghg.normalTitle" = "اللغة";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "niS-rn-1he"; */
+"niS-rn-1he.normalTitle" = "اللغة";

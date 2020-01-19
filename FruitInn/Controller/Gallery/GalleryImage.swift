@@ -17,7 +17,7 @@ class GalleryImage: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addTitleImage()
         loadImage()
         ImageScroll.delegate = self
         ImageScroll.minimumZoomScale = 1.0

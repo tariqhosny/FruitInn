@@ -5,3 +5,42 @@
   Created by Tariq on 1/16/20.
   Copyright © 2020 Tariq. All rights reserved.
 */
+"Are you sure you want to log out?" = "هل تريد تسكيل الخروج؟";
+"Log out" = "تسجيل الخروج";
+"Cancel" = "الغاء";
+"Select Language" = "قم باختيار اللغه";
+"Ok" = "تم";
+"Order in Progress" = "الطلب تحت المراجعة";
+"Order Delivered" = "الطلب وصل";
+"Order Canceled" = "الطلب تم الغائه";
+"Date: " = "التاريخ: ";
+"Order Code: " = "رقم الطلب: ";
+"Sigh In" = "تسجيل الدخول";
+"SIGN IN" = "تسجيل الدخول";
+"CREATE ACCOUNT" = "انشاء حساب";
+"Create Account" = "انشاء حساب";
+"Please enter your email" = "من فضلك ادخل البريد الالكترونى";
+"Please enter your password" = "من فضلك ادخل كلمه المرور";
+"The password must be at least 6 characters" = "يجب ان لا تقل كبمه المرور عن ٦ احرف";
+"Name not correct" = "الاسم غير صحيح";
+"Email not correct" = "البريد الاكترونى غير صحيح";
+"Login" = "تسجيل دخول";
+"Unauthorised" = "غير مصرح";
+"Register" = "";
+"Please enter your name" = "من قضلك ادخل الاسم";
+"The email has already been taken" = "البريد الالكترونى مستخدم بالفعل";
+"Profile" = "الصفحة الشخصية";
+"Please enter your old password" = "من فضلك ادخل كلمه المرور القديمة";
+"Password" = "كلمة المرور";
+"Please enter your new password" = "من فضلك ادخل كلمه المرور الجديدة";
+"Please confirm password" = "من فضلك قم بتأكيد كلمة المرور";
+"Message" = "رسالة";
+"Please enter your Message" = "من فضلك قم بادخال رسالتك";
+"Vegetables" = "الخضراوات";
+"Fruits" = "الفاكهة";
+"Order" = "الطلب";
+"Please enter your Comments" = "من فضلك ادخل تعليقك";
+"Please enter the Quantity" = "من فضلك ادخل الكمية";
+"Please enter your Phone" = "من فضلك ادخل رقم تليفونك";
+"en" = "ar";
+"zh" = "ar";

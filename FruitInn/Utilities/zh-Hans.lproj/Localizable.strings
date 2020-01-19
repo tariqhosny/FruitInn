@@ -5,3 +5,42 @@
   Created by Tariq on 1/16/20.
   Copyright © 2020 Tariq. All rights reserved.
 */
+"Are you sure you want to log out?" = "您确定要注销吗？";
+"Log out" = "登出";
+"Cancel" = "取消";
+"Select Language" = "选择语言";
+"Ok" = "好";
+"Order in Progress" = "进行中的订单";
+"Order Delivered" = "订单已交付";
+"Order Canceled" = "订单已取消";
+"Date: " = "日期：";
+"Order Code: " = "订购代码：";
+"Sign In" = "登入";
+"SIGN IN" = "登入";
+"CREATE ACCOUNT" = "创建帐号";
+"Create Account" = "创建帐号";
+"Please enter your email" = "请输入您的电子邮件";
+"Please enter your password" = "请输入您的密码";
+"The password must be at least 6 characters" = "密码必须至少6个字符";
+"Name not correct" = "名称不正确";
+"Email not correct" = "电子邮件不正确";
+"Login" = "登录";
+"Unauthorised" = "未经授权";
+"Register" = "寄存器";
+"Please enter your name" = "请输入你的名字";
+"The email has already been taken" = "该电子邮件已被接收";
+"Profile" = "轮廓";
+"Please enter your old password" = "请输入您的旧密码";
+"Password" = "密码";
+"Please enter your new password" = "请输入新密码";
+"Please confirm password" = "请确认密码";
+"Message" = "信息";
+"Please enter your Message" = "请输入您的留言";
+"Vegetables" = "蔬菜";
+"Fruits" = "水果";
+"Order" = "订购";
+"Please enter your Comments" = "请输入您的评论";
+"Please enter the Quantity" = "请输入数量";
+"Please enter your Phone" = "请输入您的手机";
+"en" = "zh";
+"ar" = "zh";

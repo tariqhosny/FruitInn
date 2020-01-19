@@ -18,7 +18,7 @@ class GalleryVideo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addTitleImage()
         if videoLink.prefix(subString.count) == subString{
             let videoId = videoLink.suffix(videoLink.count - subString.count)
             loadYoutube(videoID:String(videoId))

@@ -36,6 +36,8 @@ class productDetails: UIViewController {
         detailsTableView.delegate = self
         detailsTableView.dataSource = self
         productCollectionView.register(UINib.init(nibName: "productsCell", bundle: nil), forCellWithReuseIdentifier: "productsCell")
+        
+        productImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTaped)))
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -85,6 +87,12 @@ class productDetails: UIViewController {
             self.indicatorView.isHidden = true
             self.activityIndicatorView.stopAnimating()
         }
+    }
+    
+    @objc func imageTaped(gestureRecognizer: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GalleryImage") as! GalleryImage
+        vc.image = product.image ?? ""
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func orderBtn(_ sender: Any) {

@@ -29,6 +29,7 @@ class whoWeAre: UIViewController {
         setMenuBtn(menuButton: menuButton)
         dataHandelRefresh()
         linksHandelRefresh()
+        addTitleImage()
         // Do any additional setup after loading the view.
     }
     

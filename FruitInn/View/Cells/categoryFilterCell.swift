@@ -10,15 +10,34 @@ import UIKit
 
 class categoryFilterCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var categoryName: UILabel!
+    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var selectedCell: UIImageView!
+    
+    func configure(category: productsData){
+        selectedCell.isHidden = true
+        categoryName.text = category.title
+        let urlWithOutEncoding = ("\(URLs.imageUrl)\(category.image!)")
+        let encodedLink = urlWithOutEncoding.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+        let encodedURL = NSURL(string: encodedLink!)! as URL
+        categoryImage.kf.indicatorType = .activity
+        if let url = URL(string: "\(encodedURL)"){
+            categoryImage.kf.setImage(with: url)
+        }
     }
-
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle = .none
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        selectedCell.isHidden = selected ? false : true
     }
 
 }

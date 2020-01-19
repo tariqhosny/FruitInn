@@ -58,51 +58,51 @@ class Profile: UIViewController {
     
     func profileValidation(){
         guard let name = nameTF.text, !name.isEmpty else {
-            let messages = "Please enter your name"
-            self.showAlert(title: "Profile", message: messages)
+            let messages = "Please enter your name".localized
+            self.showAlert(title: "Profile".localized, message: messages)
             return
         }
         
         guard let email = emailTf.text, !email.isEmpty else {
-            let messages = "Please enter your email"
-            self.showAlert(title: "Profile", message: messages)
+            let messages = "Please enter your email".localized
+            self.showAlert(title: "Profile".localized, message: messages)
             return
         }
         
         guard isValidInput(Input: nameTF.text!) == true else {
-            self.showAlert(title: "Profile", message: "Name not correct")
+            self.showAlert(title: "Profile".localized, message: "Name not correct".localized)
             return
         }
         
         guard isValidEmail(testStr: emailTf.text ?? "") == true else {
-            let messages = "Email not correct"
-            self.showAlert(title: "Profile", message: messages)
+            let messages = "Email not correct".localized
+            self.showAlert(title: "Profile".localized, message: messages)
             return
         }
     }
     
     func passwordValidation(){
         guard let oldPassword = oldPasswordTf.text, !oldPassword.isEmpty else {
-            let messages = "Please enter your old password"
-            self.showAlert(title: "Password", message: messages)
+            let messages = "Please enter your old password".localized
+            self.showAlert(title: "Password".localized, message: messages)
             return
         }
         
         guard let newPassword = newPasswordTf.text, !newPassword.isEmpty else {
-            let messages = "Please enter your new password"
-            self.showAlert(title: "Password", message: messages)
+            let messages = "Please enter your new password".localized
+            self.showAlert(title: "Password".localized, message: messages)
             return
         }
         
         guard let confirmPassword = confirmPasswordTf.text, !confirmPassword.isEmpty else {
-            let messages = "Please confirm password"
-            self.showAlert(title: "Password", message: messages)
+            let messages = "Please confirm password".localized
+            self.showAlert(title: "Password".localized, message: messages)
             return
         }
         
         guard oldPasswordTf.text?.count ?? 0 >= 6, newPasswordTf.text?.count ?? 0 >= 6 else {
-            let messages = "The password must be at least 6 characters"
-            self.showAlert(title: "Password", message: messages)
+            let messages = "The password must be at least 6 characters".localized
+            self.showAlert(title: "Password".localized, message: messages)
             return
         }
     }
@@ -127,12 +127,12 @@ class Profile: UIViewController {
             profileValidation()
             AuthApi.updateProfileApi(email: emailTf.text ?? "", name: nameTF.text ?? "") { (messages) in
                 if messages.status ?? false{
-                    self.showAlert(title: "Profile", message: messages.data!)
+                    self.showAlert(title: "Profile".localized, message: messages.data!)
                     self.indicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
                 }else{
                     if let message = messages.errors{
-                        self.showAlert(title: "Profile", message: message.email?[0] ?? "")
+                        self.showAlert(title: "Profile".localized, message: message.email?[0] ?? "")
                         self.indicatorView.isHidden = true
                         self.activityIndicatorView.stopAnimating()
                     }
@@ -142,12 +142,12 @@ class Profile: UIViewController {
             passwordValidation()
             AuthApi.updatePasswordApi(password: oldPasswordTf.text ?? "", newPassword: confirmPasswordTf.text ?? "") { (message) in
                 if message.status ?? false{
-                    self.showAlert(title: "Password", message: message.data!)
+                    self.showAlert(title: "Password".localized, message: message.data!)
                     self.indicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
                 }else{
                     if let message = message.errors{
-                        self.showAlert(title: "Password", message: message.email?[0] ?? "")
+                        self.showAlert(title: "Password".localized, message: message.email?[0] ?? "")
                         self.indicatorView.isHidden = true
                         self.activityIndicatorView.stopAnimating()
                     }

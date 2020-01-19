@@ -9,6 +9,7 @@
 import UIKit
 import MarqueeLabel
 import NVActivityIndicatorView
+import MOLH
 
 class Main: UIViewController {
     
@@ -22,6 +23,8 @@ class Main: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var indicatorView: UIView!
+    @IBOutlet weak var underNewsImage: UIImageView!
+    @IBOutlet weak var otherNewsImage: UIImageView!
     
     var collectionHeight = CGFloat()
     var slider = [productsData]()
@@ -52,6 +55,12 @@ class Main: UIViewController {
         sectionCollectionView.dataSource = self
         productsCollectionView.dataSource = self
         articlsCollectionView.dataSource = self
+        
+        if MOLHLanguage.currentAppleLanguage() == "ar"{
+            marqueeLabel.type = .rightLeft
+            underNewsImage.image = #imageLiteral(resourceName: "Subtraction 2")
+            otherNewsImage.image = #imageLiteral(resourceName: "Subtraction 1")
+        }
         // Do any additional setup after loading the view.
         startTimer()
         sliderHandelRefresh()

@@ -21,6 +21,7 @@ class gallery: UIViewController {
         galleryCollectionView.delegate = self
         galleryCollectionView.dataSource = self
         galleryHandelRefresh()
+        addTitleImage()
         // Do any additional setup after loading the view.
     }
     

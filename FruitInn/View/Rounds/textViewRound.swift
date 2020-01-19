@@ -8,7 +8,7 @@
 
 import UIKit
 
-class labelRound: UILabel {
+class textViewRound: UITextView {
 
     @IBInspectable var cornerRadius: CGFloat = 0{
         didSet{
