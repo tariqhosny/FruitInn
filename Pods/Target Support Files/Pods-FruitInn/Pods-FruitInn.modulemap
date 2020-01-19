@@ -1,0 +1,6 @@
+framework module Pods_FruitInn {
+  umbrella header "Pods-FruitInn-umbrella.h"
+
+  export *
+  module * { export * }
+}
