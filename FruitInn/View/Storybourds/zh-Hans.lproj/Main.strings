@@ -1,0 +1,291 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "0X5-9Z-8pf"; */
+"0X5-9Z-8pf.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "0oe-lC-A1F"; */
+"0oe-lC-A1F.text" = "Sign In";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "1rN-1i-ape"; */
+"1rN-1i-ape.text" = "State";
+
+/* Class = "UILabel"; text = "Order Code"; ObjectID = "2EQ-vY-wjf"; */
+"2EQ-vY-wjf.text" = "Order Code";
+
+/* Class = "UILabel"; text = "Apple"; ObjectID = "2PQ-JB-4oF"; */
+"2PQ-JB-4oF.text" = "Apple";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "2zP-Qq-o3Z"; */
+"2zP-Qq-o3Z.text" = "Message";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "37g-p0-eG2"; */
+"37g-p0-eG2.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Wh-2D-SXX"; */
+"3Wh-2D-SXX.text" = "Label";
+
+/* Class = "UISegmentedControl"; 4JC-cg-skb.segmentTitles[0] = "User Data"; ObjectID = "4JC-cg-skb"; */
+"4JC-cg-skb.segmentTitles[0]" = "User Data";
+
+/* Class = "UISegmentedControl"; 4JC-cg-skb.segmentTitles[1] = "User Password"; ObjectID = "4JC-cg-skb"; */
+"4JC-cg-skb.segmentTitles[1]" = "User Password";
+
+/* Class = "UILabel"; text = "Select Season"; ObjectID = "5K0-mF-QJT"; */
+"5K0-mF-QJT.text" = "Select Season";
+
+/* Class = "UILabel"; text = "Top Products"; ObjectID = "7zq-xp-W1P"; */
+"7zq-xp-W1P.text" = "Top Products";
+
+/* Class = "UITextField"; placeholder = "Old Password"; ObjectID = "8Ps-xp-Jg4"; */
+"8Ps-xp-Jg4.placeholder" = "Old Password";
+
+/* Class = "UIButton"; normalTitle = "Who we are"; ObjectID = "8Xp-Po-9YF"; */
+"8Xp-Po-9YF.normalTitle" = "Who we are";
+
+/* Class = "UIButton"; normalTitle = "Vegetables"; ObjectID = "8Ya-5T-MKo"; */
+"8Ya-5T-MKo.normalTitle" = "Vegetables";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "8jI-PO-apZ"; */
+"8jI-PO-apZ.normalTitle" = "Forgot Password?";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "8nq-gk-tvl"; */
+"8nq-gk-tvl.placeholder" = "Full Name";
+
+/* Class = "UILabel"; text = "Select Counter"; ObjectID = "CsQ-vy-oSW"; */
+"CsQ-vy-oSW.text" = "Select Counter";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "Doc-MK-yG3"; */
+"Doc-MK-yG3.placeholder" = "Quantity";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Dpx-T8-R6h"; */
+"Dpx-T8-R6h.text" = "0";
+
+/* Class = "UILabel"; text = "Summer"; ObjectID = "ENe-yh-mpr"; */
+"ENe-yh-mpr.text" = "Summer";
+
+/* Class = "UILabel"; text = "10 Jun 2020"; ObjectID = "FDo-Ul-XIg"; */
+"FDo-Ul-XIg.text" = "10 Jun 2020";
+
+/* Class = "UILabel"; text = "Who We Are"; ObjectID = "Fww-1I-YLv"; */
+"Fww-1I-YLv.text" = "Who We Are";
+
+/* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "GzX-ht-DKH"; */
+"GzX-ht-DKH.normalTitle" = "Contact Us";
+
+/* Class = "UILabel"; text = "Fruit"; ObjectID = "I0N-tp-bHu"; */
+"I0N-tp-bHu.text" = "Fruit";
+
+/* Class = "UILabel"; text = "Details"; ObjectID = "Jv3-I0-0R3"; */
+"Jv3-I0-0R3.text" = "Details";
+
+/* Class = "UILabel"; text = "Payment Secure"; ObjectID = "KKC-iQ-m4G"; */
+"KKC-iQ-m4G.text" = "Payment Secure";
+
+/* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "LPe-xO-b9i"; */
+"LPe-xO-b9i.normalTitle" = "HOME";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LY4-34-66Z"; */
+"LY4-34-66Z.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "ORDER NOW"; ObjectID = "Lym-Vy-Icx"; */
+"Lym-Vy-Icx.normalTitle" = "ORDER NOW";
+
+/* Class = "UIButton"; normalTitle = "LOG OUT"; ObjectID = "MPg-OX-Fur"; */
+"MPg-OX-Fur.normalTitle" = "LOG OUT";
+
+/* Class = "UILabel"; text = "More Details.."; ObjectID = "N0b-is-UhK"; */
+"N0b-is-UhK.text" = "More Details..";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NJ8-vX-VBI"; */
+"NJ8-vX-VBI.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "NJm-ca-c4T"; */
+"NJm-ca-c4T.text" = "Name";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "NaR-Ah-1ZG"; */
+"NaR-Ah-1ZG.text" = "3";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "Nwf-do-hlf"; */
+"Nwf-do-hlf.text" = "Date";
+
+/* Class = "UILabel"; text = "Filter"; ObjectID = "OAm-hy-jfh"; */
+"OAm-hy-jfh.text" = "Filter";
+
+/* Class = "UILabel"; text = "Who We Are"; ObjectID = "OI7-qS-Nba"; */
+"OI7-qS-Nba.text" = "Who We Are";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "OYv-ww-Brj"; */
+"OYv-ww-Brj.normalTitle" = "SIGN IN";
+
+/* Class = "UILabel"; text = "Select Type"; ObjectID = "Ofr-dl-9tY"; */
+"Ofr-dl-9tY.text" = "Select Type";
+
+/* Class = "UIButton"; normalTitle = "Who we are"; ObjectID = "PEB-n8-r7V"; */
+"PEB-n8-r7V.normalTitle" = "Who we are";
+
+/* Class = "UILabel"; text = "MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel."; ObjectID = "Q71-kV-PQo"; */
+"Q71-kV-PQo.text" = "MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel. MarqueeLabel is a UILabel subclass adds a scrolling marquee effect when the text of the label outgrows the available width. The label scrolling direction and speed/rate can be specified as well. All standard UILabel properties (where it makes sense) are available in MarqueeLabel, with the intent of MarqueeLabel behaving just like a UILabel.";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "QSS-hS-Yjk"; */
+"QSS-hS-Yjk.placeholder" = "Country";
+
+/* Class = "UIButton"; normalTitle = "LOG OUT"; ObjectID = "S5e-cc-wvL"; */
+"S5e-cc-wvL.normalTitle" = "LOG OUT";
+
+/* Class = "UIButton"; normalTitle = "(Login/Register)"; ObjectID = "The-EY-gZu"; */
+"The-EY-gZu.normalTitle" = "(Login/Register)";
+
+/* Class = "UILabel"; text = "Varieties"; ObjectID = "VO7-WC-Wpz"; */
+"VO7-WC-Wpz.text" = "Varieties";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vrx-w7-sKj"; */
+"Vrx-w7-sKj.text" = "Label";
+
+/* Class = "UILabel"; text = "Varieties"; ObjectID = "WXi-lE-jlZ"; */
+"WXi-lE-jlZ.text" = "Varieties";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "XK0-hU-KHW"; */
+"XK0-hU-KHW.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "XOV-cN-X5A"; */
+"XOV-cN-X5A.placeholder" = "Phone";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Xen-YO-flm"; */
+"Xen-YO-flm.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "XnJ-bT-eA3"; */
+"XnJ-bT-eA3.placeholder" = "Full Name";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "XoM-Nf-KNP"; */
+"XoM-Nf-KNP.text" = "Quantity";
+
+/* Class = "UILabel"; text = "100% Money Back"; ObjectID = "Xoi-lf-1Xy"; */
+"Xoi-lf-1Xy.text" = "100% Money Back";
+
+/* Class = "UIButton"; normalTitle = "Fruits"; ObjectID = "Yf1-Ej-APm"; */
+"Yf1-Ej-APm.normalTitle" = "Fruits";
+
+/* Class = "UILabel"; text = "Order: 0"; ObjectID = "Z9R-m8-40O"; */
+"Z9R-m8-40O.text" = "Order: 0";
+
+/* Class = "UILabel"; text = "Fruit"; ObjectID = "ZJs-Sh-mA0"; */
+"ZJs-Sh-mA0.text" = "Fruit";
+
+/* Class = "UIButton"; normalTitle = "Tariq"; ObjectID = "aXw-WB-Bx4"; */
+"aXw-WB-Bx4.normalTitle" = "Tariq";
+
+/* Class = "UILabel"; text = "Support 24/7"; ObjectID = "aZt-or-T0z"; */
+"aZt-or-T0z.text" = "Support 24/7";
+
+/* Class = "UIButton"; normalTitle = "Tariq"; ObjectID = "b5t-5l-A9Z"; */
+"b5t-5l-A9Z.normalTitle" = "Tariq";
+
+/* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "cMZ-hh-jgt"; */
+"cMZ-hh-jgt.normalTitle" = "Gallery";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dON-3j-MWu"; */
+"dON-3j-MWu.text" = "0";
+
+/* Class = "UILabel"; text = "News: "; ObjectID = "dQT-sY-lPf"; */
+"dQT-sY-lPf.text" = "News: ";
+
+/* Class = "UIButton"; normalTitle = "(Login/Register)"; ObjectID = "eTM-tv-zFC"; */
+"eTM-tv-zFC.normalTitle" = "(Login/Register)";
+
+/* Class = "UILabel"; text = "Related Products"; ObjectID = "fuM-6U-ybB"; */
+"fuM-6U-ybB.text" = "Related Products";
+
+/* Class = "UIButton"; normalTitle = "Vegetables"; ObjectID = "gNg-wm-Oum"; */
+"gNg-wm-Oum.normalTitle" = "Vegetables";
+
+/* Class = "UIButton"; normalTitle = "My Orders"; ObjectID = "h8z-Aa-Z0c"; */
+"h8z-Aa-Z0c.normalTitle" = "My Orders";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "hW1-8x-PMF"; */
+"hW1-8x-PMF.normalTitle" = "Edit";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "hh6-5g-R1Q"; */
+"hh6-5g-R1Q.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Write Comment"; ObjectID = "j6A-04-ScO"; */
+"j6A-04-ScO.text" = "Write Comment";
+
+/* Class = "UILabel"; text = "Articles"; ObjectID = "jNK-oC-7bL"; */
+"jNK-oC-7bL.text" = "Articles";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "kSd-RK-Xtc"; */
+"kSd-RK-Xtc.placeholder" = "Phone Number";
+
+/* Class = "UILabel"; text = "PREVIOUS ORDERS"; ObjectID = "lCZ-FW-5iu"; */
+"lCZ-FW-5iu.text" = "PREVIOUS ORDERS";
+
+/* Class = "UILabel"; text = "tariq"; ObjectID = "mtI-EF-wLr"; */
+"mtI-EF-wLr.text" = "tariq";
+
+/* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "obs-rP-Rzh"; */
+"obs-rP-Rzh.normalTitle" = "Contact Us";
+
+/* Class = "UILabel"; text = "Update Profile"; ObjectID = "pCR-eM-lh5"; */
+"pCR-eM-lh5.text" = "Update Profile";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "pPd-qI-dpH"; */
+"pPd-qI-dpH.text" = "Contact Us";
+
+/* Class = "UILabel"; text = "News"; ObjectID = "pvQ-lV-8Kn"; */
+"pvQ-lV-8Kn.text" = "News";
+
+/* Class = "UITextField"; placeholder = "Type"; ObjectID = "rhb-eY-Ruj"; */
+"rhb-eY-Ruj.placeholder" = "Type";
+
+/* Class = "UIButton"; normalTitle = "Gallery"; ObjectID = "rv0-8l-Mif"; */
+"rv0-8l-Mif.normalTitle" = "Gallery";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "saj-BD-Ylv"; */
+"saj-BD-Ylv.placeholder" = "Full Name";
+
+/* Class = "UIButton"; normalTitle = "Filter"; ObjectID = "spf-Hb-rkm"; */
+"spf-Hb-rkm.normalTitle" = "Filter";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "stc-Ma-5Il"; */
+"stc-Ma-5Il.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "See All"; ObjectID = "tJ8-11-Blb"; */
+"tJ8-11-Blb.normalTitle" = "See All";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "u12-Je-Ip0"; */
+"u12-Je-Ip0.text" = "Label";
+
+/* Class = "UILabel"; text = "Select Type"; ObjectID = "u96-Y1-MMw"; */
+"u96-Y1-MMw.text" = "Select Type";
+
+/* Class = "UIButton"; normalTitle = "My Orders"; ObjectID = "uHI-vU-rX0"; */
+"uHI-vU-rX0.normalTitle" = "My Orders";
+
+/* Class = "UILabel"; text = "Fruit"; ObjectID = "vB0-in-lYZ"; */
+"vB0-in-lYZ.text" = "Fruit";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "vBA-6e-bDX"; */
+"vBA-6e-bDX.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "CREATE ACCOUNT"; ObjectID = "w3O-P0-aoo"; */
+"w3O-P0-aoo.normalTitle" = "CREATE ACCOUNT";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "wHs-jK-ZTb"; */
+"wHs-jK-ZTb.placeholder" = "New Password";
+
+/* Class = "UILabel"; text = "Apples and face Rock Aged white chandder Cheese"; ObjectID = "wcG-Rf-k4e"; */
+"wcG-Rf-k4e.text" = "Apples and face Rock Aged white chandder Cheese";
+
+/* Class = "UILabel"; text = "All Products"; ObjectID = "wub-Ab-kfb"; */
+"wub-Ab-kfb.text" = "All Products";
+
+/* Class = "UIButton"; normalTitle = "Fruits"; ObjectID = "x0I-OA-Wbd"; */
+"x0I-OA-Wbd.normalTitle" = "Fruits";
+
+/* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "xSL-OC-KNO"; */
+"xSL-OC-KNO.normalTitle" = "HOME";
+
+/* Class = "UILabel"; text = "Fruit"; ObjectID = "xVi-uP-VqR"; */
+"xVi-uP-VqR.text" = "Fruit";
+
+/* Class = "UILabel"; text = "Comments"; ObjectID = "zaY-0D-IHJ"; */
+"zaY-0D-IHJ.text" = "Comments";
