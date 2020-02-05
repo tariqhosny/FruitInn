@@ -13,6 +13,7 @@ class productsCell: UICollectionViewCell {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productCountryImage: UIImageView!
+    @IBOutlet weak var productDescription: UILabel!
     //egypt vietnam  china  england
     override func awakeFromNib() {
         if helper.getCountryId() == "egypt"{
@@ -32,6 +33,7 @@ class productsCell: UICollectionViewCell {
     
     func configureCell(product: productsData){
         productName.text = product.title
+        productDescription.text = product.short_description
         let urlWithoutEncoding = ("\(URLs.imageUrl)\(product.image!)")
         let encodedLink = urlWithoutEncoding.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
         let encodedURL = NSURL(string: encodedLink!)! as URL

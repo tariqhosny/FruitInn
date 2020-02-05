@@ -25,6 +25,7 @@ class Main: UIViewController {
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var underNewsImage: UIImageView!
     @IBOutlet weak var otherNewsImage: UIImageView!
+    @IBOutlet weak var scroll: UIScrollView!
     
     var collectionHeight = CGFloat()
     var slider = [productsData]()
@@ -36,9 +37,13 @@ class Main: UIViewController {
     var singleProduct = productsData()
     var timer : Timer?
     var currentIndex = 0
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        scroll.refreshControl = refreshControl
         
         setMenuBtn(menuButton: menuButton)
         addCountryBtn()
@@ -47,6 +52,7 @@ class Main: UIViewController {
         marqueeLabel.type = .continuous
         marqueeLabel.animationCurve = .linear
         
+        bannerCollectionView.tag = 1
         bannerCollectionView.delegate = self
         sectionCollectionView.delegate = self
         productsCollectionView.delegate = self
@@ -69,6 +75,15 @@ class Main: UIViewController {
         newsHandelRefresh()
     }
     
+    @objc func refresh(sender:AnyObject) {
+        startTimer()
+        sliderHandelRefresh()
+        sectionsHandelRefresh()
+        productsHandelRefresh()
+        newsHandelRefresh()
+        refreshControl.endRefreshing()
+    }
+    
     func sliderHandelRefresh(){
         activityIndicatorView.startAnimating()
         indicatorView.isHidden = false
@@ -77,6 +92,9 @@ class Main: UIViewController {
                 self.slider = images.data!
                 self.bageControl.numberOfPages = self.slider.count
                 self.bageControl.currentPage = 0
+                if MOLHLanguage.currentAppleLanguage() == "ar"{
+                    self.slider.reverse()
+                }
                 self.bannerCollectionView.reloadData()
             }
             print(image!)
@@ -102,7 +120,7 @@ class Main: UIViewController {
             }
             print(product!)
             self.collectionHeight = self.productsCollectionView.collectionViewLayout.collectionViewContentSize.height
-            self.viewHieght.constant = self.collectionHeight + 720
+            self.viewHieght.constant = self.collectionHeight + 750
             self.view.layoutIfNeeded()
             
             self.indicatorView.isHidden = true
@@ -139,7 +157,7 @@ class Main: UIViewController {
         } else {
             currentIndex = 0
             let index = IndexPath.init(item: currentIndex, section: 0)
-            self.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
+            self.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
             bageControl.currentPage = currentIndex
             currentIndex = 1
         }
@@ -179,6 +197,9 @@ extension Main: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
         if collectionView == bannerCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bannerCell", for: indexPath) as! bannerCell
             cell.configureCell(images: slider[indexPath.item])
+            if MOLHLanguage.currentAppleLanguage() == "ar"{
+                cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            }
             return cell
         }else if collectionView == sectionCollectionView{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionCell", for: indexPath) as! sectionCell
@@ -203,7 +224,7 @@ extension Main: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
             let screenWidth = collectionView.frame.width
             var width = (screenWidth-15)/2
             width = width < 130 ? 160 : width
-            return CGSize.init(width: width, height: 150)
+            return CGSize.init(width: width, height: 160)
         }else if collectionView == sectionCollectionView{
             let screenWidth = collectionView.frame.width
             var width = (screenWidth-10)/2
@@ -227,6 +248,15 @@ extension Main: UICollectionViewDelegate, UICollectionViewDataSource, UICollecti
         }else if collectionView == articlsCollectionView{
             self.article = news[indexPath.item]
             performSegue(withIdentifier: "articles", sender: nil)
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if MOLHLanguage.currentAppleLanguage() != "ar"{
+            if scrollView.tag == 1{
+                currentIndex = Int(scrollView.contentOffset.x / bannerCollectionView.frame.size.width)
+                bageControl.currentPage = currentIndex
+            }
         }
     }
     

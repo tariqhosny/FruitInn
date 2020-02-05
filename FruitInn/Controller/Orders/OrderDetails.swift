@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class OrderDetails: UIViewController {
 
@@ -15,6 +16,8 @@ class OrderDetails: UIViewController {
     @IBOutlet weak var quantityLb: UILabel!
     @IBOutlet weak var codeLb: UILabel!
     @IBOutlet weak var commentsLb: UILabel!
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+    @IBOutlet weak var indicatorView: UIView!
     
     var comments = String()
     var code = String()
@@ -26,10 +29,13 @@ class OrderDetails: UIViewController {
         print(comments)
         print(code)
         orderHandelRefresh()
+        productImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTaped)))
         // Do any additional setup after loading the view.
     }
 
     func orderHandelRefresh(){
+        activityIndicatorView.startAnimating()
+        indicatorView.isHidden = false
         self.codeLb.text = self.code
         self.commentsLb.text = self.comments
         ordersApi.orderDetailsApi(id: Int(code) ?? 0) { (order) in
@@ -43,7 +49,17 @@ class OrderDetails: UIViewController {
                 if let url = URL(string: "\(encodedURL)") {
                     self.productImage.kf.setImage(with: url)
                 }
+                self.image = order[0].image ?? ""
             }
+            self.indicatorView.isHidden = true
+            self.activityIndicatorView.stopAnimating()
         }
     }
+    
+    @objc func imageTaped(gestureRecognizer: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GalleryImage") as! GalleryImage
+        vc.image = image
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

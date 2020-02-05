@@ -40,6 +40,13 @@ class whoWeAre: UIViewController {
             if let whoWeAra = data.data{
                 self.titleLb.text = whoWeAra[0].title
                 self.descriptionLb.text = whoWeAra[0].description
+                let urlWithoutEncoding = ("\(URLs.imageUrl)\(whoWeAra[0].image!)")
+                let encodedLink = urlWithoutEncoding.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+                let encodedURL = NSURL(string: encodedLink!)! as URL
+                self.imageView.kf.indicatorType = .activity
+                if let url = URL(string: "\(encodedURL)") {
+                    self.imageView.kf.setImage(with: url)
+                }
             }
             self.indicatorView.isHidden = true
             self.activityIndicatorView.stopAnimating()
@@ -58,8 +65,6 @@ class whoWeAre: UIViewController {
                         self.twitter = link.link ?? ""
                     }else if link.name == "instagram"{
                         self.instagram = link.link ?? ""
-                    }else if link.name == "linkedin"{
-                        self.linked = link.link ?? ""
                     }
                 }
             }
@@ -81,12 +86,6 @@ class whoWeAre: UIViewController {
     @IBAction func instaBtn(_ sender: Any) {
         print(instagram)
         guard let url = URL(string: self.instagram) else { return }
-        UIApplication.shared.open(url)
-    }
-    
-    @IBAction func linkedBtn(_ sender: Any) {
-        print(instagram)
-        guard let url = URL(string: self.linked) else { return }
         UIApplication.shared.open(url)
     }
 }

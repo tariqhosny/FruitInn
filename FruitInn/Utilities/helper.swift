@@ -59,11 +59,7 @@ class helper: NSObject {
         guard let window = UIApplication.shared.keyWindow else {return}
         let sb = UIStoryboard(name: "Main", bundle: nil)
         var vc: UIViewController
-        if getUserToken() == nil{
-            vc = sb.instantiateInitialViewController()!
-        }else{
-            vc = sb.instantiateViewController(withIdentifier: "main")
-        }
+        vc = sb.instantiateInitialViewController()!
         window.rootViewController = vc
     }
 }

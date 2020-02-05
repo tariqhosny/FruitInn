@@ -82,7 +82,7 @@ class productDetails: UIViewController {
                 self.detailsTableView.reloadData()
             }
             self.tableHeight = self.detailsTableView.contentSize.height + self.detailsTableView.contentInset.bottom + self.detailsTableView.contentInset.top
-            self.viewHieght.constant = self.tableHeight + self.productDescription.intrinsicContentSize.height + 540
+            self.viewHieght.constant = self.tableHeight + self.productDescription.intrinsicContentSize.height + 570
             self.view.layoutIfNeeded()
             self.indicatorView.isHidden = true
             self.activityIndicatorView.stopAnimating()

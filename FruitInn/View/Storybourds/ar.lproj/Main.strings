@@ -135,13 +135,13 @@
 "The-EY-gZu.normalTitle" = "(تسجيل الدخول / تسجيل)";
 
 /* Class = "UILabel"; text = "Varieties"; ObjectID = "VO7-WC-Wpz"; */
-"VO7-WC-Wpz.text" = "أصناف";
+"VO7-WC-Wpz.text" = "الوصف";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Vrx-w7-sKj"; */
 "Vrx-w7-sKj.text" = "Label";
 
 /* Class = "UILabel"; text = "Varieties"; ObjectID = "WXi-lE-jlZ"; */
-"WXi-lE-jlZ.text" = "أصناف";
+"WXi-lE-jlZ.text" = "الوصف";
 
 /* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "XK0-hU-KHW"; */
 "XK0-hU-KHW.placeholder" = "تأكيد كلمة المرور";
@@ -206,11 +206,11 @@
 /* Class = "UILabel"; text = "Product Name"; ObjectID = "hh6-5g-R1Q"; */
 "hh6-5g-R1Q.text" = "اسم المنتج";
 
-/* Class = "UILabel"; text = "Write Comment"; ObjectID = "j6A-04-ScO"; */
-"j6A-04-ScO.text" = "قم بكتابه تعليق";
+/* Class = "UILabel"; text = "Order"; ObjectID = "j6A-04-ScO"; */
+"j6A-04-ScO.text" = "طلب";
 
 /* Class = "UILabel"; text = "Articles"; ObjectID = "jNK-oC-7bL"; */
-"jNK-oC-7bL.text" = "مقالات";
+"jNK-oC-7bL.text" = "اخر الاخبار";
 
 /* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "kSd-RK-Xtc"; */
 "kSd-RK-Xtc.placeholder" = "رقم التليفون";
@@ -295,3 +295,9 @@
 
 /* Class = "UIButton"; normalTitle = "Language"; ObjectID = "niS-rn-1he"; */
 "niS-rn-1he.normalTitle" = "اللغة";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "aMz-ig-26A"; */
+"aMz-ig-26A.text" = "العنوان";
+
+/* Class = "UILabel"; text = "Sections"; ObjectID = "ja8-bB-2F0"; */
+"ja8-bB-2F0.text" = "الاقسام";

@@ -15,7 +15,7 @@
 "Order Canceled" = "الطلب تم الغائه";
 "Date: " = "التاريخ: ";
 "Order Code: " = "رقم الطلب: ";
-"Sigh In" = "تسجيل الدخول";
+"Sign In" = "تسجيل الدخول";
 "SIGN IN" = "تسجيل الدخول";
 "CREATE ACCOUNT" = "انشاء حساب";
 "Create Account" = "انشاء حساب";
@@ -42,5 +42,6 @@
 "Please enter your Comments" = "من فضلك ادخل تعليقك";
 "Please enter the Quantity" = "من فضلك ادخل الكمية";
 "Please enter your Phone" = "من فضلك ادخل رقم تليفونك";
+"Write Comment" = "كتابه تعليق";
 "en" = "ar";
 "zh" = "ar";

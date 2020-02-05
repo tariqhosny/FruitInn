@@ -32,7 +32,7 @@ class AuthApi: NSObject {
             "email": email,
             "password": password,
             "name": name,
-            "phone": "123"
+            "phone": "1"
         ]
         Alamofire.request(URLs.register, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
         do{

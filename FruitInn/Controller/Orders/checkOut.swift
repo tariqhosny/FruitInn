@@ -25,6 +25,9 @@ class checkOut: UIViewController {
         indicatorView.isHidden = true
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTap(_:))))
         popView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTapPop(_:))))
+        indicatorView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTapPop(_:))))
+        
+        commentsTv.placeholder = "Write Comment".localized
         // Do any additional setup after loading the view.
     }
     

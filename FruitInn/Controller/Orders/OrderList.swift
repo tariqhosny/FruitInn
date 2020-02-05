@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class OrderList: UIViewController {
 
     @IBOutlet weak var ordersTableView: UITableView!
     @IBOutlet weak var ordersCountLb: UILabel!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+    @IBOutlet weak var indicatorView: UIView!
     var orders = [orderData]()
     
     override func viewDidLoad() {
@@ -29,12 +31,16 @@ class OrderList: UIViewController {
     }
     
     func ordersHandelRefresh(){
+        activityIndicatorView.startAnimating()
+        indicatorView.isHidden = false
         ordersApi.orderListApi { (orders) in
             if let orders = orders.data{
                 self.orders = orders
                 self.ordersCountLb.text = "\(self.orders.count)"
                 self.ordersTableView.reloadData()
             }
+            self.indicatorView.isHidden = true
+            self.activityIndicatorView.stopAnimating()
         }
     }
 

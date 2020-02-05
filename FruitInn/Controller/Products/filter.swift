@@ -180,6 +180,7 @@ extension filter: UIPickerViewDelegate, UIPickerViewDataSource{
                 self.england = 0
                 self.vietnam = 1
             }
+            helper.saveCountryId(country: images[row])
         }else {
             self.typeTf.text = sections[row].title
             self.sectionId = sections[row].id ?? 0

@@ -15,7 +15,7 @@ class articlesCell: UICollectionViewCell {
     @IBOutlet weak var dateLb: UILabel!
     
     func configureCell(product: productsData){
-        articleLb.text = product.short_description
+        articleLb.text = product.title
         dateLb.text = product.date
         let urlWithoutEncoding = ("\(URLs.imageUrl)\(product.image!)")
         let encodedLink = urlWithoutEncoding.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)

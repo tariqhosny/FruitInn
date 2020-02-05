@@ -11,7 +11,11 @@ import MOLH
 
 extension UIViewController{
     func addTitleImage(){
-       let navController = navigationController!
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
+        
+        let navController = navigationController!
         
         let image = UIImage(named: "logo-1")
         let imageView = UIImageView(image: image)
@@ -20,9 +24,9 @@ extension UIViewController{
         let bannerHeight = navController.navigationBar.frame.size.height
         
         let bannerX = bannerWidth / 2 - (image?.size.width)! / 2
-        let bannerY = bannerHeight / 2 - (image?.size.height)! / 2
+        let bannerY = bannerHeight / 2
         
-        imageView.frame = CGRect(x: bannerX, y: bannerY, width: image!.size.width, height: bannerHeight)
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: image!.size.width, height: image!.size.height)
         imageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = imageView
@@ -139,14 +143,90 @@ extension UIViewController{
         alert.addAction(UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-}
-
-extension Notification.Name{
-    static let toSection = Notification.Name("toSection")
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        navigationController?.navigationBar.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
 extension String{
     var localized: String{
         NSLocalizedString(self, comment: "")
     }
+}
+
+extension UITextView: UITextViewDelegate {
+    
+    /// Resize the placeholder when the UITextView bounds change
+    override open var bounds: CGRect {
+        didSet {
+            self.resizePlaceholder()
+        }
+    }
+    
+    /// The UITextView placeholder text
+    public var placeholder: String? {
+        get {
+            var placeholderText: String?
+            
+            if let placeholderLabel = self.viewWithTag(100) as? UILabel {
+                placeholderText = placeholderLabel.text
+            }
+            
+            return placeholderText
+        }
+        set {
+            if let placeholderLabel = self.viewWithTag(100) as! UILabel? {
+                placeholderLabel.text = newValue
+                placeholderLabel.sizeToFit()
+            } else {
+                self.addPlaceholder(newValue!)
+            }
+        }
+    }
+    
+    /// When the UITextView did change, show or hide the label based on if the UITextView is empty or not
+    ///
+    /// - Parameter textView: The UITextView that got updated
+    public func textViewDidChange(_ textView: UITextView) {
+        if let placeholderLabel = self.viewWithTag(100) as? UILabel {
+            placeholderLabel.isHidden = self.text.count > 0
+        }
+    }
+    
+    /// Resize the placeholder UILabel to make sure it's in the same position as the UITextView text
+    private func resizePlaceholder() {
+        if let placeholderLabel = self.viewWithTag(100) as! UILabel? {
+            let labelX = self.textContainer.lineFragmentPadding
+            let labelY = self.textContainerInset.top - 2
+            let labelWidth = self.frame.width - (labelX * 2)
+            let labelHeight = placeholderLabel.frame.height
+
+            placeholderLabel.frame = CGRect(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
+        }
+    }
+    
+    /// Adds a placeholder UILabel to this UITextView
+    private func addPlaceholder(_ placeholderText: String) {
+        let placeholderLabel = UILabel()
+        
+        placeholderLabel.text = placeholderText
+        placeholderLabel.sizeToFit()
+        
+        placeholderLabel.font = self.font
+        placeholderLabel.textColor = UIColor.lightGray
+        placeholderLabel.tag = 100
+        
+        placeholderLabel.isHidden = self.text.count > 0
+        
+        self.addSubview(placeholderLabel)
+        self.resizePlaceholder()
+        self.delegate = self
+    }
+    
 }

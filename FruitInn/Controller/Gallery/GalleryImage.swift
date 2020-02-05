@@ -22,6 +22,8 @@ class GalleryImage: UIViewController, UIScrollViewDelegate {
         ImageScroll.delegate = self
         ImageScroll.minimumZoomScale = 1.0
         ImageScroll.maximumZoomScale = 5.0
+        
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(onDrage(_:))))
 
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onDoubleTap))
         tapRecognizer.numberOfTapsRequired = 2
@@ -66,5 +68,39 @@ class GalleryImage: UIViewController, UIScrollViewDelegate {
         if let url = URL(string: "\(encodedURL)") {
             imageView.kf.setImage(with: url)
         }
+    }
+    
+    @objc func onDrage(_ sender:UIPanGestureRecognizer) {
+           let percentThreshold:CGFloat = 0.3
+           let translation = sender.translation(in: view)
+
+           let newX = ensureRange(value: view.frame.minY + translation.y, minimum: 0, maximum: view.frame.maxY)
+           let progress = progressAlongAxis(newX, view.bounds.width)
+
+           view.frame.origin.y = newX
+
+           if sender.state == .ended {
+               let velocity = sender.velocity(in: view)
+              if velocity.y >= 300 || progress > percentThreshold {
+                  _ = navigationController?.popViewController(animated: true)
+              } else {
+                  UIView.animate(withDuration: 0.2, animations: {
+                      self.view.frame.origin.y = 0
+                  })
+             }
+          }
+
+          sender.setTranslation(.zero, in: view)
+       }
+    
+    func progressAlongAxis(_ pointOnAxis: CGFloat, _ axisLength: CGFloat) -> CGFloat {
+        let movementOnAxis = pointOnAxis / axisLength
+        let positiveMovementOnAxis = fmaxf(Float(movementOnAxis), 0.0)
+        let positiveMovementOnAxisPercent = fminf(positiveMovementOnAxis, 1.0)
+        return CGFloat(positiveMovementOnAxisPercent)
+    }
+
+    func ensureRange<T>(value: T, minimum: T, maximum: T) -> T where T : Comparable {
+        return min(max(value, minimum), maximum)
     }
 }

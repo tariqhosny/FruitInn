@@ -14,11 +14,11 @@ class products: UIViewController {
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var indicatorView: UIView!
+    @IBOutlet weak var categoryNameLb: UILabel!
     
     var category = productsData()
     var products = [productsData]()
     var singleProduct = productsData()
-    
     var seasonId = Int()
     var categorisIDs = [Int]()
     var egypt = Int()
@@ -50,6 +50,7 @@ class products: UIViewController {
         activityIndicatorView.startAnimating()
         indicatorView.isHidden = false
         if fromFilter == 1{
+            categoryNameLb.text = "Filter"
             productsApi.filterApi(seasonId: seasonId, categoryIDs: categorisIDs, england: england, egypt: egypt, china: china, vietnam: vietnam) { (products) in
                 if let products = products.data{
                     self.products = products
@@ -60,6 +61,7 @@ class products: UIViewController {
             }
         }else{
             if category.id == nil {
+                categoryNameLb.text = "All Products"
                 productsApi.allProductApi { (products) in
                     if let products = products.data{
                         self.products = products
@@ -69,6 +71,7 @@ class products: UIViewController {
                     self.activityIndicatorView.stopAnimating()
                 }
             }else{
+                categoryNameLb.text = category.title
                 productsApi.productsCategoryApi(id: category.id ?? 0) { (products) in
                     if let products = products.data{
                         self.products = products
@@ -103,7 +106,7 @@ extension products: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         let screenWidth = collectionView.frame.width
         var width = (screenWidth-10)/2
         width = width < 130 ? 160 : width
-        return CGSize.init(width: width, height: 150)
+        return CGSize.init(width: width, height: 160)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

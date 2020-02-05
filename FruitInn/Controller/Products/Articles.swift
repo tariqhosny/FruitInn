@@ -23,9 +23,8 @@ class Articles: UIViewController {
         addTitleImage()
     }
     
-
     func setApearance(){
-       let urlWithoutEncoding = ("\(URLs.imageUrl)\(article.image!)")
+        let urlWithoutEncoding = ("\(URLs.imageUrl)\(article.image!)")
         let encodedLink = urlWithoutEncoding.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
         let encodedURL = NSURL(string: encodedLink!)! as URL
         articleImage.kf.indicatorType = .activity

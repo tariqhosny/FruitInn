@@ -27,20 +27,19 @@ class leftMenu: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.toProfile.setTitle(helper.getUserName() ?? "", for: .normal)
         if helper.getUserToken() != nil{
             self.logoutBtn.isHidden = false
             self.orderStackView.isHidden = false
             self.separaitedView.isHidden = false
             self.toLogin.isHidden = true
             self.toProfile.isHidden = false
-//            self.penIamge.isHidden = false
         }else{
             self.logoutBtn.isHidden = true
             self.orderStackView.isHidden = true
             self.separaitedView.isHidden = true
             self.toLogin.isHidden = false
             self.toProfile.isHidden = true
-//            self.penIamge.isHidden = true
         }
     }
     
@@ -50,7 +49,6 @@ class leftMenu: UIViewController {
             sectionVC.sectionId = self.sectionId
             sectionVC.sectionName = self.sectionName
         }
-        
     }
     
     @IBAction func vegetablesBtn(_ sender: Any) {

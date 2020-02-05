@@ -22,10 +22,17 @@ class contactUs: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        messageTv.placeholder = "Message"
         setMenuBtn(menuButton: menuButton)
         addTitleImage()
         indicatorView.isHidden = true
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func menuAction(_ sender: UIBarButtonItem) {
+        
+        
     }
     
     @IBAction func sendMessageBtn(_ sender: Any) {

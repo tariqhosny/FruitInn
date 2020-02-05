@@ -16,7 +16,6 @@ class Login: UIViewController {
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
     @IBOutlet weak var signBtn: UIButton!
-    @IBOutlet weak var forgetPasswordBtn: UIButton!
     @IBOutlet weak var switchSignBtn: UIButton!
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -38,8 +37,13 @@ class Login: UIViewController {
         if fromDetails == 0{
             addTitleImage()
             self.transparenceView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
 
+        nameTf.textAlignment = .left
+        emailTf.textAlignment = .left
+        passwordTf.textAlignment = .left
+        
         indicatorView.isHidden = true
     }
     
@@ -50,7 +54,6 @@ class Login: UIViewController {
         emailTf.text = ""
         passwordTf.text = ""
         signBtn.setTitle("SIGN IN".localized, for: .normal)
-        forgetPasswordBtn.isHidden = false
         switchSignBtn.setTitle("CREATE ACCOUNT".localized, for: .normal)
     }
     
@@ -61,39 +64,7 @@ class Login: UIViewController {
         emailTf.text = ""
         passwordTf.text = ""
         signBtn.setTitle("CREATE ACCOUNT".localized, for: .normal)
-        forgetPasswordBtn.isHidden = true
         switchSignBtn.setTitle("SIGN IN".localized, for: .normal)
-    }
-    
-    func validation(title: String){
-        guard let email = emailTf.text, !email.isEmpty else {
-            let messages = "Please enter your email".localized
-            self.showAlert(title: title, message: messages)
-            return
-        }
-        
-        guard let password = passwordTf.text, !password.isEmpty else {
-            let messages = "Please enter your password".localized
-            self.showAlert(title: title, message: messages)
-            return
-        }
-        
-        guard passwordTf.text?.count ?? 0 >= 6 else {
-            let messages = "The password must be at least 6 characters".localized
-            self.showAlert(title: title, message: messages)
-            return
-        }
-        
-        guard isValidInput(Input: nameTf.text!) == true else {
-            self.showAlert(title: title, message: "Name not correct".localized)
-            return
-        }
-        
-        guard isValidEmail(testStr: emailTf.text ?? "") == true else {
-            let messages = "Email not correct".localized
-            self.showAlert(title: title, message: messages)
-            return
-        }
     }
     
     @objc func onTap(_ sender:UIPanGestureRecognizer) {
@@ -103,12 +74,36 @@ class Login: UIViewController {
     @objc func onTapPop(_ sender:UIPanGestureRecognizer) {
     }
     
-    @IBAction func forgetPasswordButton(_ sender: UIButton) {
-    }
-    
     @IBAction func signButton(_ sender: UIButton) {
         if titleLb.text == "Sign In".localized{
-            validation(title: "Login".localized)
+            guard let email = emailTf.text, !email.isEmpty else {
+                let messages = "Please enter your email".localized
+                self.showAlert(title: "Login".localized, message: messages)
+                return
+            }
+            
+            guard let password = passwordTf.text, !password.isEmpty else {
+                let messages = "Please enter your password".localized
+                self.showAlert(title: "Login".localized, message: messages)
+                return
+            }
+            
+            guard passwordTf.text?.count ?? 0 >= 6 else {
+                let messages = "The password must be at least 6 characters".localized
+                self.showAlert(title: "Login".localized, message: messages)
+                return
+            }
+            
+            guard isValidInput(Input: nameTf.text!) == true else {
+                self.showAlert(title: "Login".localized, message: "Name not correct".localized)
+                return
+            }
+            
+            guard isValidEmail(testStr: emailTf.text ?? "") == true else {
+                let messages = "Email not correct".localized
+                self.showAlert(title: "Login".localized, message: messages)
+                return
+            }
             activityIndicatorView.startAnimating()
             indicatorView.isHidden = false
             AuthApi.loginApi(email: emailTf.text ?? "", password: passwordTf.text ?? "") { (loginData) in
@@ -136,7 +131,34 @@ class Login: UIViewController {
                 self.showAlert(title: "Register".localized, message: messages)
                 return
             }
-            validation(title: "Register".localized)
+            guard let email = emailTf.text, !email.isEmpty else {
+                let messages = "Please enter your email".localized
+                self.showAlert(title: "Register".localized, message: messages)
+                return
+            }
+            
+            guard let password = passwordTf.text, !password.isEmpty else {
+                let messages = "Please enter your password".localized
+                self.showAlert(title: "Register".localized, message: messages)
+                return
+            }
+            
+            guard passwordTf.text?.count ?? 0 >= 6 else {
+                let messages = "The password must be at least 6 characters".localized
+                self.showAlert(title: "Register".localized, message: messages)
+                return
+            }
+            
+            guard isValidInput(Input: nameTf.text!) == true else {
+                self.showAlert(title: "Register".localized, message: "Name not correct".localized)
+                return
+            }
+            
+            guard isValidEmail(testStr: emailTf.text ?? "") == true else {
+                let messages = "Email not correct".localized
+                self.showAlert(title: "Register".localized, message: messages)
+                return
+            }
             activityIndicatorView.startAnimating()
             indicatorView.isHidden = false
             AuthApi.registerApi(email: emailTf.text ?? "", password: passwordTf.text ?? "", name: nameTf.text ?? "") { (register) in
@@ -153,6 +175,8 @@ class Login: UIViewController {
                         }
                     }
                 }else{
+                    self.indicatorView.isHidden = true
+                    self.activityIndicatorView.stopAnimating()
                     self.showAlert(title: "Register".localized, message: "The email has already been taken".localized)
                 }
             }

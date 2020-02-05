@@ -26,6 +26,7 @@
 		5228559E23B4A01E00564C74 /* galleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228559D23B4A01E00564C74 /* galleryCell.swift */; };
 		5228703523CB05B90084CDEB /* MenuApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5228703423CB05B90084CDEB /* MenuApis.swift */; };
 		524AE6D323D08F770065F0AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 524AE6D523D08F770065F0AE /* Localizable.strings */; };
+		52528AFA23E03B540058349C /* TextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52528AF923E03B540058349C /* TextFieldIcon.swift */; };
 		5267E6B523BB6F4F00F39F91 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267E6B423BB6F4F00F39F91 /* AuthApi.swift */; };
 		5267E6B723BB708A00F39F91 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267E6B623BB708A00F39F91 /* AuthModel.swift */; };
 		5267E6B923BB70A500F39F91 /* productsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267E6B823BB70A500F39F91 /* productsModel.swift */; };
@@ -87,6 +88,7 @@
 		524AE6D023D06CA70065F0AE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		524AE6D423D08F770065F0AE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		524AE6D623D08F8C0065F0AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		52528AF923E03B540058349C /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
 		5267E6B423BB6F4F00F39F91 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		5267E6B623BB708A00F39F91 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		5267E6B823BB70A500F39F91 /* productsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productsModel.swift; sourceTree = "<group>"; };
@@ -187,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				52EF493F23AA197E00F6921E /* Main.swift */,
-				5220DBD023BCB386006D843E /* Catigories.swift */,
 				52AC7B2623C33C0500E2EB51 /* Sections.swift */,
+				5220DBD023BCB386006D843E /* Catigories.swift */,
 				5286C0B623B0FECC00502246 /* products.swift */,
 				5286C0B823B1018300502246 /* productDetails.swift */,
 				5286C0BE23B102C300502246 /* filter.swift */,
@@ -334,6 +336,7 @@
 				52A62E1E23B20B55005F25FE /* textViewRound.swift */,
 				52A4072423CC61D200B4F3D3 /* textFieldRound.swift */,
 				52EF495D23AA2DEA00F6921E /* viewRound.swift */,
+				52528AF923E03B540058349C /* TextFieldIcon.swift */,
 			);
 			path = Rounds;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				5228559E23B4A01E00564C74 /* galleryCell.swift in Sources */,
 				522708E123CDD9B000BEABF9 /* GalleryVideo.swift in Sources */,
 				522708D723CDAD2A00BEABF9 /* OrderDetails.swift in Sources */,
+				52528AFA23E03B540058349C /* TextFieldIcon.swift in Sources */,
 				5212FBFD23AFAA5800AB8E29 /* articlesCell.swift in Sources */,
 				522708DF23CDD99200BEABF9 /* GalleryImage.swift in Sources */,
 				52A4072723CCB35600B4F3D3 /* Articles.swift in Sources */,
@@ -674,6 +678,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = FruitInn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -681,6 +686,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tariq.FruitInn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FruitInn/View/FruitInn-Bridging-Header.h";
@@ -697,6 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = FruitInn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -704,6 +711,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tariq.FruitInn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FruitInn/View/FruitInn-Bridging-Header.h";

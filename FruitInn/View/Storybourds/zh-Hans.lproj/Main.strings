@@ -295,3 +295,9 @@
 
 /* Class = "UIButton"; normalTitle = "Language"; ObjectID = "niS-rn-1he"; */
 "niS-rn-1he.normalTitle" = "语言";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "aMz-ig-26A"; */
+"aMz-ig-26A.text" = "标题";
+
+/* Class = "UILabel"; text = "Sections"; ObjectID = "ja8-bB-2F0"; */
+"ja8-bB-2F0.text" = "栏目";

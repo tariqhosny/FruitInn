@@ -128,11 +128,13 @@ class Profile: UIViewController {
             AuthApi.updateProfileApi(email: emailTf.text ?? "", name: nameTF.text ?? "") { (messages) in
                 if messages.status ?? false{
                     self.showAlert(title: "Profile".localized, message: messages.data!)
+                    self.userDataHandelRefresh()
                     self.indicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
                 }else{
                     if let message = messages.errors{
                         self.showAlert(title: "Profile".localized, message: message.email?[0] ?? "")
+                        self.userDataHandelRefresh()
                         self.indicatorView.isHidden = true
                         self.activityIndicatorView.stopAnimating()
                     }
@@ -143,11 +145,17 @@ class Profile: UIViewController {
             AuthApi.updatePasswordApi(password: oldPasswordTf.text ?? "", newPassword: confirmPasswordTf.text ?? "") { (message) in
                 if message.status ?? false{
                     self.showAlert(title: "Password".localized, message: message.data!)
+                    self.oldPasswordTf.text = ""
+                    self.newPasswordTf.text = ""
+                    self.confirmPasswordTf.text = ""
                     self.indicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
                 }else{
                     if let message = message.errors{
                         self.showAlert(title: "Password".localized, message: message.email?[0] ?? "")
+                        self.oldPasswordTf.text = ""
+                        self.newPasswordTf.text = ""
+                        self.confirmPasswordTf.text = ""
                         self.indicatorView.isHidden = true
                         self.activityIndicatorView.stopAnimating()
                     }
